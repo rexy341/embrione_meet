@@ -19,6 +19,15 @@ create table if not exists public.members (
 );
 
 alter table public.members enable row level security;
+
+-- Remove permissive policies from earlier challenge/setup versions. PostgreSQL
+-- combines permissive policies with OR, so leaving these behind can bypass the
+-- safer admin-only policies below.
+drop policy if exists "Allow public insert" on public.members;
+drop policy if exists "Allow public read" on public.members;
+drop policy if exists "Allow admin updates" on public.members;
+drop policy if exists "Allow admin deletes" on public.members;
+
 revoke all on public.members from anon, authenticated;
 grant select, insert on public.members to anon;
 grant select, insert, update, delete on public.members to authenticated;
