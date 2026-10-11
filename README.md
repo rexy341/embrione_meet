@@ -1,8 +1,21 @@
+<<<<<<< HEAD
 # THE EMBRIONE — Meet the Team
 
 A dark cyber-tech visual system inspired by the supplied KODIKON poster: near-black/navy surfaces, cyan circuit accents, ivory typography, and the original Embrione wordmark. The poster is a visual reference only; its event and sponsor content is not reproduced.
 
 React + Vite + Tailwind CSS + Supabase starter for the Embrione web development recruitment challenge.
+=======
+# The Embrione — Web Development Domain Recruitment Challenge Organization
+
+- Organization: The Embrione, Department of Computer Science & Engineering, PES
+University
+- Challenge Window: 48 Hours
+- Submission Form Release: At the 40th Hour
+- Deployment Platform: Vercel
+- Database & Storage: Supabase (PostgreSQL + Storage)
+
+  React + Vite + Tailwind CSS + Supabase starter for the Embrione web development recruitment challenge.
+>>>>>>> origin/main
 
 ## Requirements
 
@@ -10,6 +23,7 @@ React + Vite + Tailwind CSS + Supabase starter for the Embrione web development 
 - npm
 - A Supabase project
 
+<<<<<<< HEAD
 ## 1. Install and run
 
 ```bash
@@ -67,3 +81,16 @@ Vite embeds `VITE_` variables into browser code. Only use the Supabase publishab
 - The brief's universal admin credential should be configured in Supabase Auth, not hardcoded in JavaScript.
 - Demo seed records use placeholder emails/SRNs and public avatar URLs. They are sample data, not real members.
 - For a production system, consider adding rate limiting / CAPTCHA for public submissions and a server-side workflow to clean up orphaned uploads if an insert fails.
+=======
+## 1. Routes
+
+- `/register` — form, live card preview, browser-side WebP conversion and submission
+- `/admin` — Supabase Auth sign-in and moderation dashboard
+- `/team` — approved profiles with domain/position/search filters
+
+
+## Notes before submission
+
+- The brief's universal admin credential is configured in Supabase Auth, not hardcoded in JavaScript.
+- Demo seed records use placeholder emails/SRNs and public avatar URLs. They are sample data, not real members.
+>>>>>>> origin/main

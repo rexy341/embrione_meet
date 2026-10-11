@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+<<<<<<< HEAD
 import BootIntro from './BootIntro'
+=======
+>>>>>>> origin/main
 
 const navClass = ({ isActive }) => `rounded-lg px-3 py-2 transition ${isActive ? 'bg-cyan-300/10 text-cyan-100' : 'text-zinc-400 hover:text-white'}`
 
@@ -81,7 +84,10 @@ function CircuitBackdrop() {
 
 export function Layout({ children }) {
   return <div className="site-shell min-h-screen text-zinc-100">
+<<<<<<< HEAD
     <BootIntro />
+=======
+>>>>>>> origin/main
     <CircuitBackdrop />
     <header className="sticky top-0 z-20 border-b border-cyan-100/10 bg-[#05090d]/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 md:px-8">
