@@ -70,7 +70,6 @@ button, input, select, textarea { font: inherit; }
 .metal-tab__count { display: inline-grid; min-width: 22px; height: 22px; place-items: center; padding: 0 5px; border: 1px solid rgba(196, 231, 239, .22); background: rgba(0, 0, 0, .24); color: #d9faff; font-size: 10px; letter-spacing: 0; clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px)); }
 @media (max-width: 540px) { .metal-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } .metal-tab { padding-inline: 10px; } }
 @media (prefers-reduced-motion: reduce) { .metal-tab { transition: none; } }
-<<<<<<< HEAD
 
 /* First-visit terminal boot sequence */
 .boot-intro{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;overflow:hidden;background:#020407;color:#dffaff;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;animation:boot-fade-in .25s ease-out both}
@@ -90,5 +89,3 @@ button, input, select, textarea { font: inherit; }
 @keyframes boot-terminal-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 @keyframes boot-fade-in{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){.boot-intro,.boot-code-column,.boot-cursor,.boot-terminal{animation:none!important;transition:none!important}.boot-code-column{transform:none!important}}
-=======
->>>>>>> origin/main
